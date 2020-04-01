@@ -1,0 +1,9 @@
+<h1>Number of Words : {{length }}</h1>
+{% for word, cnt in sorted_list %}
+    {{word}}-{{cnt}}
+    <br/>
+{%endfor%}
+<br/>
+<form action="{%url 'home'%}">
+    <button>Return to home page</button>
+</form>
